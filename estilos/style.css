@@ -53,14 +53,33 @@ div#formulario > p {
 }
 form > div.campo {
     background-color: var(--lilas);
-    width: 100%;
+    border: 2px solid var(--lilas);
+    width: 98%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 div.campo > label {
     display: none;
+}
+div.campo > span {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input {
+    display:inline-block;
+    background-color: #56ceca;
+    font-size: 1em;
+    width:calc(100% -40px) ;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 22px;
+    transform: translate(41px , -45px);
 }
 form > input[type=submit] {
     display: block;
